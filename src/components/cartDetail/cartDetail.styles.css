@@ -1,0 +1,28 @@
+.cartDetail-container {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 100vw;
+    overflow-y: auto;
+    align-items: center;
+}
+.cartDetail-container__cart {
+    max-height: 10vh;
+}
+.cartDetail-container__card {
+    display: flex;
+    width: 90%;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+}
+
+
+.cartDetail-container__img {
+    width: 20%;
+
+}
+
+.cartDetail-container__body {
+    width: 40%;
+}

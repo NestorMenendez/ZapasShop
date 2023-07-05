@@ -1,0 +1,21 @@
+.DetailBuyCard-container {
+    width: 100%;
+    background-color: #fff;
+    background-clip: border-box;
+}
+
+.DetailBuyCard-container__counter {
+    color: rgba(0,0,0,.725);
+    font-size: 2rem;
+}
+.DetailBuyCard-container__basic-buttons {
+    width: 35px;
+    height: 30px;
+    font-size: 12px;
+    background-color: rgba(0,0,0,.625);
+}
+.DetailBuyCard-container__buy-button {
+    height: 4rem;
+    width: 100%;
+    font-size: 2rem;
+}

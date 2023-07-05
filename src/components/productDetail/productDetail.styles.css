@@ -1,0 +1,54 @@
+/* correction for the bootstrap row class */
+/* .row {
+    margin-left: 0;
+    margin-right: 0;
+} */
+.productDetail-container {
+    height: 80vh;
+}
+.img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 65vh;
+    padding-left: 2vw;
+    /* width: 50vw; */
+}
+.detail-container {
+    padding-right:  2vw;
+}
+.img-container__div-principal {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+}
+.img-container__div-secondary {
+    max-height: 15vh;
+}
+/* <img> properties */
+.img-principal{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+.img-secondary{
+    width: 8%;
+    margin-top: 1%;
+    object-fit: cover;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+}
+.img-secondary:hover{
+    cursor: pointer;
+    scale: 1.10;
+}
+

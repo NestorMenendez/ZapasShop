@@ -1,0 +1,138 @@
+{
+    "products" : [
+        {
+            "id": 1,
+            "title": "Adidas Originals ZX",
+            "description": "Átese con un estilo sigiloso de las 3 bandas con estas zapatillas de deporte ZX 750 para hombre de adidas Originals. Exclusivas de JD, estas zapatillas de inspiración retro tienen una parte superior de malla transpirable con superposiciones de cuero de primera calidad. Cuentan con un cierre de cordones tonal y cuello de tobillo acolchado para una comodidad ceñida. Sentados en una entresuela de espuma suave con una pisada de agarre para un paso acolchado, estos entrenadores están terminados con las clásicas 3 bandas en las paredes laterales, una marca denominativa ZX 750 y la marca adidas Originals.",
+            "price": 105,
+            "img": ["/src/assets/img/adidas-originals-zx-01.webp",
+                    "/src/assets/img/adidas-originals-zx-02.webp",
+                    "/src/assets/img/adidas-originals-zx-03.webp",
+                    "/src/assets/img/adidas-originals-zx-04.webp",
+                    "/src/assets/img/adidas-originals-zx-05.webp",
+                    "/src/assets/img/adidas-originals-zx-06.webp"]
+          },
+          {
+            "id": 2,
+            "title": "Adidas Samba",
+            "description": "Nacida en los campos de fútbol, la Samba es un icono atemporal de estilo urbano. Esta zapatilla mantiene la esencia de su legado con una parte superior de piel suave y refuerzos de ante.",
+            "price": 120,
+            "img": ["/src/assets/img/adidas-samba-01.webp",
+                  "/src/assets/img/adidas-samba-02.webp",
+                  "/src/assets/img/adidas-samba-03.webp",
+                  "/src/assets/img/adidas-samba-04.webp",
+                  "/src/assets/img/adidas-samba-05.webp",
+                  "/src/assets/img/adidas-samba-06.webp"]
+          },
+          {
+            "id": 3,
+            "title": "Jordan Point",
+            "description": "Inspiradas en tres de las temporadas mas memorables de MJ. Las Jordan Point Lane combinan elementos de las zapatillas que MJ usó durante tres de sus temporadas más memorables.Llamado así por su dirección de Chicago, este modelo inspirado en la grandeza y la comodidad combina elementos de las AJ3, las AJ6 y las AJ11.",
+            "price": 140,
+            "img": ["/src/assets/img/jordan-point-01.webp",
+                  "/src/assets/img/jordan-point-02.webp",
+                  "/src/assets/img/jordan-point-03.webp",
+                  "/src/assets/img/jordan-point-04.webp",
+                  "/src/assets/img/jordan-point-05.webp",
+                  "/src/assets/img/jordan-point-06.webp"]
+          },
+          {
+            "id": 4,
+            "title": "Lacoste Game Advance",
+            "description": "Lleve el estilo tradicional a las calles con estos tenis Game Advance para hombre de Lacoste. En una combinación de colores negro, estos entrenadores gruesos tienen una parte superior de cuero y material sintético para una comodidad duradera. Cuentan con un cuello textil acolchado y un cierre de cordones a tono para un ajuste personalizado. Bajo los pies, la entresuela en contraste ofrece una pisada amortiguada, mientras que la suela exterior de goma agrega un agarre esencial. Rematado con la marca Lacoste, que incluye el clásico cocodrilo en las paredes laterales y el talón.",
+            "price": 140,
+            "img": ["/src/assets/img/lacoste-game-advance-01.webp",
+                  "/src/assets/img/lacoste-game-advance-02.webp",
+                  "/src/assets/img/lacoste-game-advance-03.webp",
+                  "/src/assets/img/lacoste-game-advance-04.webp",
+                  "/src/assets/img/lacoste-game-advance-05.webp",
+                  "/src/assets/img/lacoste-game-advance-06.webp"]
+          },
+          {
+            "id": 5,
+            "title": "Nike Air Force",
+            "description": "Las zapatillas AF1 Low júnior de Nike son un básico. Cuentan con un empeine de piel blanca y llevan el logo de Nike a ambos lados, además de una chapa metálica en los cordones. Otros detalles incluyen un forro interior de malla, cordones planos, el logo de Nike bordado en el talón y en la lengüeta, además de una entresuela gruesa con una cámara de aire, para una mayor amortiguación.",
+            "price": 100,
+            "img": ["/src/assets/img/nike-air-force-01.webp",
+                  "/src/assets/img/nike-air-force-02.webp",
+                  "/src/assets/img/nike-air-force-03.webp",
+                  "/src/assets/img/nike-air-force-04.webp",
+                  "/src/assets/img/nike-air-force-05.webp",
+                  "/src/assets/img/nike-air-force-06.webp"]
+          },
+          {
+            "id": 6,
+            "title": "Nike Air Max",
+            "description": "Rinde homenaje a una línea icónica de zapatillas con un estilo trepidante. Inspiradas en el cuerpo humano y en la estética deportiva de los 90, las Nike Air Max 95 combinan una comodidad increíble con un diseño que atraerá todas las miradas. Los paneles laterales ondulados añaden un flujo natural a cualquier look, y la amortiguación Nike Air visible en el talón y el antepié ofrece una comodidad increíble.",
+            "price": 190,
+            "img": ["/src/assets/img/nike-air-max-01.webp",
+                  "/src/assets/img/nike-air-max-02.webp",
+                  "/src/assets/img/nike-air-max-03.webp",
+                  "/src/assets/img/nike-air-max-04.webp",
+                  "/src/assets/img/nike-air-max-05.webp",
+                  "/src/assets/img/nike-air-max-06.webp"]
+          },
+          {
+            "id": 7,
+            "title": "Nike Dunk (Low)",
+            "description": "Desde la cancha hasta las calles, ponte estos tenis Dunk Low para hombre de Nike. En una combinación de colores Stadium Green con detalles en blanco y negro, estos creps inspirados en la cancha tienen una parte superior de cuero fresco para una sensación premium. Cuentan con un cierre de cordones tonal con relleno de felpa alrededor del cuello para un ajuste seguro, y se asientan sobre una entresuela aerodinámica con amortiguación esponjosa. Tienen una suela exterior de goma resistente para una tracción con agarre y están terminados con el legendario Swoosh de Nike en las paredes laterales con la marca clásica para firmar.",
+            "price": 120,
+            "img": ["/src/assets/img/nike-dunk-low-01.webp",
+                  "/src/assets/img/nike-dunk-low-02.webp",
+                  "/src/assets/img/nike-dunk-low-03.webp",
+                  "/src/assets/img/nike-dunk-low-04.webp",
+                  "/src/assets/img/nike-dunk-low-05.webp",
+                  "/src/assets/img/nike-dunk-low-06.webp"]
+          },
+          {
+            "id": 8,
+            "title": "ON Running Cloudswift",
+            "description": "Acumula millas con estas zapatillas de deporte Cloudswift para mujer de On Running. Con una combinación de colores Magnet con detalles en lavanda, estas zapatillas están confeccionadas con un tejido transpirable en la parte superior, con superposiciones sintéticas suaves para mayor soporte y durabilidad. Cuentan con un cierre de cordones seguro y acolchado alrededor del cuello escotado para encerrarlo, mientras que la superespuma CloudTec ofrece una comodidad suprema bajo los pies. Tienen una tabla de velocidad curva para una conducción receptiva con un movimiento de balanceo natural y una suela de goma con agarre para una tracción total. Terminó con la marca On Running.",
+            "price": 160,
+            "img": ["/src/assets/img/on-running-cloudswift-01.webp",
+                  "/src/assets/img/on-running-cloudswift-02.webp",
+                  "/src/assets/img/on-running-cloudswift-03.webp",
+                  "/src/assets/img/on-running-cloudswift-04.webp",
+                  "/src/assets/img/on-running-cloudswift-05.webp",
+                  "/src/assets/img/on-running-cloudswift-06.webp"]
+          },
+          {
+            "id": 9,
+            "title": "Vans Rowley",
+            "description": "Renueva tu colección de zapatillas con estas zapatillas Rowley Tape para hombre de Vans. Son parte de la última colaboración de la marca con el legendario skater. Estos tenis, exclusivos de JD, vienen en un diseño de color negro y blanco y tienen el empeine de ante con superposiciones sintéticas para mayor durabilidad. Cuentan con una cordonera para fijarlas bien al pie y se sientan en una entresuela ligera para una comodidad acolchada durante todo el día. Cuentan con la icónica suela de goma tipo waffle para una tracción esencial. Están rematadas con el logo Sidestripe en las paredes laterales y el sello de la marca Vans.",
+            "price": 90,
+            "img": ["/src/assets/img/vans-rowley-01.webp",
+                  "/src/assets/img/vans-rowley-02.webp",
+                  "/src/assets/img/vans-rowley-03.webp",
+                  "/src/assets/img/vans-rowley-04.webp",
+                  "/src/assets/img/vans-rowley-05.webp",
+                  "/src/assets/img/vans-rowley-06.webp"]
+          },
+          {
+            "id": 10,
+            "title": "Jordan MVP",
+            "description": "Llevando el legado del básquetbol a las calles, ponte estos tenis MVP para hombre de Jordan. En una combinación de colores Black con llamativos detalles en Dark Concord y University Red, estas zapatillas inspiradas en la cancha toman elementos de los íconos de Jordan. La parte superior de cuero y tela está influenciada por los AJ6 y AJ7, con elegantes detalles de puntadas y paneles en capas. Cuentan con un cierre de cordones tonal con acolchado de felpa alrededor del cuello de corte medio y se sientan encima de una unidad Nike Air-Sole encapsulada en la entresuela para una amortiguación de siguiente nivel. Con una suela exterior de goma resistente para una tracción con agarre, están terminados con la marca Jordan exclusiva en todas partes.",
+            "price": 170,
+            "img": ["/src/assets/img/jordan-mvp-01.webp",
+                  "/src/assets/img/jordan-mvp-02.webp",
+                  "/src/assets/img/jordan-mvp-03.webp",
+                  "/src/assets/img/jordan-mvp-04.webp",
+                  "/src/assets/img/jordan-mvp-05.webp",
+                  "/src/assets/img/jordan-mvp-06.webp"]
+          }
+    ],
+    "users" : [
+      {
+            "user" : "pepito",
+            "password": "22"
+      },
+      {
+            "user" : "juanito",
+            "password": "1234"
+      },
+      {
+            "user" : "jorgito",
+            "password": "0000"
+      }
+    ]
+}

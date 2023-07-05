@@ -1,0 +1,29 @@
+/* scrollbar elements definition -------------------------------------------------------------------------------------- */
+::-webkit-scrollbar {
+    width: 16px;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+/* size definition for the ProductCard element - the header and footer are both fixed to 10vh ------------------------- */
+.productCards-container {
+    height: 80vh;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.card {
+    width: 18rem;
+}
+.card:hover {
+    scale: 1.1;
+}
