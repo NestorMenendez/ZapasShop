@@ -9,20 +9,18 @@ import "./ProductsCard.styles.css"
 
 export const ProductCard = () => {
 
-    const productContext = useContext (ProductContext);
+    const {products, changeProducts} = useContext (ProductContext);
 
     useEffect (() => {
-        if (productContext.products.length === 0 ){
+        if (products.length === 0 ){
             const getFetch = async () => {
                 const allProducts: ProductProps[] = await getAllProducts();
-                productContext.changeProducts(allProducts);
+                changeProducts(allProducts);
             }
             getFetch();
 
         }
-    },[productContext.products]);
-    
-    const products = productContext.products;
+    },[products]);
 
     return (
 

@@ -45,7 +45,7 @@ const LoginForm = () => {
         const user = userContext.users.find( user => user.user === userInput );
 
         if (user && user.password === passInput) {
-            login();
+            login(user.user);
             navigate ("/");
         }else{
             window.alert ("ATENTION: User NOT registrated.");
