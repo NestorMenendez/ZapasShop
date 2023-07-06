@@ -7,7 +7,7 @@ import deleteCommandInCart from "../api/deleteCommandInCart";
 
 
 
-const CartContext = createContext<{cartState: CartProps[], handleBuy: (idNumber: number, counter: number) => void, handleDelete: ((commandId: string) => void) }> ({cartState: [], handleBuy: () => {}, handleDelete: () => {} });
+const CartContext = createContext<{cartState: CartProps[], handleBuy: (idNumber: number, counter: number, user: string) => void, handleDelete: ((commandId: string) => void) }> ({cartState: [], handleBuy: () => {}, handleDelete: () => {} });
 
 const initProductsInCart = getCartFromLocalStorage();
 
@@ -19,7 +19,6 @@ const cartReducer = (state: CartProps[], action: CartContextReducerAction) => {
     case 'DELETE_FROM_CART': {
       return action.product;
     }
-
     default: {
       return state;
     };
@@ -30,13 +29,12 @@ export const CartProvider: FC<Props> = ({children}) => {
   
   const [cartState, dispatch] = useReducer (cartReducer, initProductsInCart);
   
-
-  const handleBuy = (idNumber: number, counter: number) => {
+  const handleBuy = (idNumber: number, counter: number, user: string = "") => {
     const product: CartProps = {
       id: idNumber,
       size: 41,
       quantity: counter,
-      user: 'Pepito',
+      user: user,
       commandId: uuid()
     };
     setItemToLocalStorage(product); 
@@ -46,14 +44,13 @@ export const CartProvider: FC<Props> = ({children}) => {
     });
   };
 
-
   const handleDelete = (commandId: string) => {
     const updatedProducts = deleteCommandInCart(commandId);
     dispatch({
       type: 'DELETE_FROM_CART',
       product: updatedProducts
     });
-  }
+  };
   
   return (
     <CartContext.Provider value={{cartState, handleBuy, handleDelete}}>

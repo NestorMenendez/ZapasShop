@@ -29,13 +29,13 @@ const ProductDetail = () => {
             <div className="col d-flex flex-column justify-content-around detail-container">
                 <div>
                     <div className="py-1">
-                        <b>Model:</b> {products[0].title}
+                        <b>Model:</b> {product?.title}
                     </div>
                     <div className="py-1">
-                        <b>Description:</b> <i>{products[0].description}</i>
+                        <b>Description:</b> <i>{product?.description}</i>
                     </div>
                     <div className="py-1">
-                        <b>Price:</b> {products[0].price}€
+                        <b>Price:</b> {product?.price}€
                     </div>
                 </div>
                 <div className="detailBuyCard">

@@ -1,19 +1,21 @@
-import './App.css'
-import { RouterPaths } from './routes/RouterPaths.routes'
-import { Navbar } from "./components/navbar/Navbar"
-import { Footer } from "./components/footer/Footer"
-import { BrowserRouter} from 'react-router-dom'
-import { ProductProvider } from './context/ProductContext'
-import { CartProvider } from './context/CartContext'
-import { AuthProvider } from './context/AuthContext'
-import { UserProvider } from './context/UserContext'
-
-
+import './App.css';
+import { RouterPaths } from './routes/RouterPaths.routes';
+import { Navbar } from "./components/navbar/Navbar";
+import { Footer } from "./components/footer/Footer";
+import { BrowserRouter } from 'react-router-dom';
+import {
+  ProductProvider,
+  CartProvider,
+  AuthProvider,
+  UserProvider,
+  ItemsProvider
+} from './context';
 
 function App() {
   return (
     <>
       <BrowserRouter>
+        <ItemsProvider>
         <UserProvider>
         <AuthProvider>
           <CartProvider>
@@ -27,6 +29,7 @@ function App() {
 
         </AuthProvider>
         </UserProvider>
+        </ItemsProvider>
         <Footer/> 
 
       </BrowserRouter>

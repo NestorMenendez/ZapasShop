@@ -22,7 +22,6 @@ const LoginForm = () => {
 
     useEffect (() => {
         if (userContext.users.length === 0 ){
-            console.log ("entra en el fetch");
             const getFetch = async () => {
                 const allUsers: UserProps[] = await getAllUsers();
                 userContext.changeUsers(allUsers);
@@ -68,4 +67,4 @@ const LoginForm = () => {
   );
 };
 
-export default LoginForm
+export default LoginForm;

@@ -1,7 +1,7 @@
-
+import ProfileShippingDetail from "../components/profileShippingDetail/ProfileShippingDetail"
 
 export const ProfilePage = () => {
   return (
-    <div>ProfilePage</div>
+    <ProfileShippingDetail/>
   )
 }

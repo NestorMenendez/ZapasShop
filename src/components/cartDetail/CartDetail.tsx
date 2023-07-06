@@ -1,39 +1,66 @@
-import { useContext } from 'react';
+import { useContext, useEffect, useState } from 'react';
+import { Navigate, useNavigate } from 'react-router-dom';
 
 import CartContext from '../../context/CartContext';
 import ProductContext from '../../context/ProductContext';
+import AuthContext from '../../context/AuthContext';
+import { PostItemToApi } from '../../api/postItemToAPI';
 
 import "./cartDetail.styles.css";
-
+import { CartProps } from '../../types/types';
 
 const CartDetail = () => {
 
     const productContext = useContext (ProductContext);
-    const {cartState, handleBuy, handleDelete} = useContext (CartContext);
-
+    const {userLogged, isAuthenticated} = useContext (AuthContext);
+    const {cartState, handleDelete} = useContext (CartContext);
+    const [userItemsCartState, setUserItemsCartState] = useState <CartProps[]>([]);
+    const navigate = useNavigate ();
+    
     const products = productContext.products;
+
+    useEffect(() => {
+        const filteredCartState = cartState.filter(user => user.user === userLogged);
+        setUserItemsCartState(filteredCartState);
+      }, [cartState, userLogged]);
 
     const cartTotalPrice = () => {
         let cartTotal = 0;
-
-        cartState.forEach (({id, quantity}) => {
+        userItemsCartState.forEach (({id, quantity}) => {
             const product = products.find (product => product.id === id);
             if (product) {
                 cartTotal += product.price * quantity;
-            }
-        })
+            };
+        });
         return cartTotal;
-    }
+    };
+
+    const handleBuyNow = () => {
+        if (!isAuthenticated) {
+            window.alert ('User has to be logged to navigate to the profile area.');
+            return <Navigate to={'/login'}></Navigate>
+        }else {
+            PostItemToApi(userItemsCartState);
+            navigate('/private/profile');
+        };
+    };
 
   return (
     <>
         <div className='cartDetail-container'>
+            {cartTotalPrice() !== 0 ? (
+                <div className='card-body d-flex cartDetail-container__card cartDetail-container__cart text-end mb-3 justify-content-between'>
+                        <h4 className='card-title'><b>Total account in cart:  {cartTotalPrice()}€</b></h4>
+                        <button className='btn btn-success' onClick={handleBuyNow}>Buy now</button>
+                </div>
+            ) : (
+                <div className='card-body d-flex cartDetail-container__card cartDetail-container__cart text-end mb-3 justify-content-between'>
+                        <h4 className='card-title'><b>¡There's no products in the cart!</b></h4>
+                </div>
+            )
+            }
 
-            <div className='card-body d-flex cartDetail-container__card cartDetail-container__cart text-end mb-3'>
-                    <h4 className='card-title'><b>Total account in cart:  {cartTotalPrice()}€</b></h4>
-            </div>
-
-            {cartState.map(({ id, size, quantity, user, commandId }) => {
+            {userItemsCartState.map(({ id, size, quantity, user, commandId }) => {
 
                     const product = products.find((product) => product.id === id );
 
@@ -53,8 +80,8 @@ const CartDetail = () => {
                                 </svg>
                             </button>
                         </article>
-                    );
-                })};
+                    )
+                })}
         </div>
     </>
   );

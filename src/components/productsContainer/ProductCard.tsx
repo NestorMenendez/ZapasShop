@@ -24,7 +24,7 @@ export const ProductCard = () => {
 
     return (
 
-        <div className="productCards-container d-flex flex-wrap gap-4 justify-content-around overflow-auto">
+        <div className="productCards-container d-flex flex-wrap gap-4 justify-content-around overflow-auto px-4">
           {products?.map(({ id, img, title, price, description }) => (
             <Link to={`/productDetail/${id}`} className="card" key={id}>
               <img className="card-img-top" src={img[0]} alt="Card image cap" />

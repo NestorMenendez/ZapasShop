@@ -1,7 +1,11 @@
 .navbar {
     /* display: flex; */
     height: 10vh;
+    background: linear-gradient(to top, #ffffff, #9d9d9d);
 }
 .logo {
     font-size: 6vh;
+}
+.navbar-nav {
+    font-size: 3vh;
 }

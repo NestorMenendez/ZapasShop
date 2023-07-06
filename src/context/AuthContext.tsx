@@ -1,5 +1,6 @@
 import { FC, createContext, useCallback, useMemo, useState } from "react"
 import { Props } from "../types/types";
+import { useNavigate } from "react-router-dom";
 
 
 export const AuthContext = createContext< {login: (user: string) => void, logout: () => void; isAuthenticated: boolean; userLogged: string}>({login: () => {}, logout: () => {}, isAuthenticated: false, userLogged: ''});
@@ -10,7 +11,8 @@ export const AuthProvider: FC<Props> = ({children}) => {
     const [isAuthenticated, setIsAuthenticated] = useState <boolean> (
         localStorage.getItem('authAppZapas') === 'false'
     );
-    const [userLogged, setUserLogged] = useState <string> ('');
+    const [userLogged, setUserLogged] = useState <string> ('NoUser');
+    const navigate = useNavigate();
 
     const login = useCallback( (user: string) => {
         localStorage.setItem('authAppZapas', true.toString());
@@ -21,7 +23,8 @@ export const AuthProvider: FC<Props> = ({children}) => {
     const logout = useCallback( () => {
         localStorage.removeItem('authAppZapas');
         setIsAuthenticated (false);
-        setUserLogged ('');
+        setUserLogged ('NoUser');
+        navigate ('/');
     }, []);
 
     const authContextValue = useMemo ( () => ({

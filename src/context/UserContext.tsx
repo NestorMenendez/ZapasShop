@@ -10,12 +10,8 @@ export const UserProvider: FC<Props> = ({children}) => {
     const [users, setUsers] = useState<UserProps[]>([]);
 
     const changeUsers = (newUser: UserProps[]) => {
-        console.log ("entra en el changeUsers")
         setUsers (newUser);
-        console.log (newUser)
-    }
-
-    console.log (users);
+    };
 
   return (
     <>
